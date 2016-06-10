@@ -1,4 +1,4 @@
-#include "ctest.h"
+#include <ctest.h>
 #include <diskr.h>
 
 CTEST(equation_suite, two_roots_test)
