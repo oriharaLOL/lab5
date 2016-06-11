@@ -1,4 +1,4 @@
-#define CTESTMAIN
+#define CTEST_MAIN
 #include <ctest.h>
 
 int main()

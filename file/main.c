@@ -3,9 +3,9 @@
 
 int main()
 {
-float a,b,c;
+int a,b,c;
 printf("input a,b,c:");
-scanf("%f%f%f",&a ,&b ,&c);
+scanf("%d%d%d",&a ,&b ,&c);
 dis(a, b, c);
 return 0;
 }

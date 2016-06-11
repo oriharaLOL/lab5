@@ -1,15 +1,18 @@
 INCLUDES = -I ./file -I thirdparty/
 
 ./papka1/diskr: ./papka2/main.o ./papka2/dis.o ./papka2/test.o ./papka1 ./papka2
-	gcc -o ./papka1/diskr -lm ./papka2/main.o ./papka2/dis.o
+	gcc -o ./papka1/diskr -lm ./papka2/main.o ./papka2/dis.o -Wall
 
 ./papka1/test: ./papka2/maintest.o ./papka2/dis.o ./papka2/test.o ./papka1 ./papka2
-	gcc -o ./papka1/test -lm ./papka2/test.o ./papka2/maintest.o ./papka2/dis.o
+	gcc -o ./papka1/test -lm ./papka2/test.o ./papka2/maintest.o ./papka2/dis.o -Wall
+
+test:
+	./papka1/test
 
 ./papka2/main.o: ./file/main.c ./papka2
 	gcc -c ./file/main.c -o ./papka2/main.o -Wall $(INCLUDES)
 
-./papka2/dis.o: ./file/dis.c ./papka2
+./papka2/dis.o: ./file/dis.c
 	gcc -c ./file/dis.c -o ./papka2/dis.o -Wall $(INCLUDES)
 
 ./papka2/maintest.o: ./test/main.c
@@ -24,9 +27,6 @@ INCLUDES = -I ./file -I thirdparty/
 ./papka2:
 	mkdir papka2
 
-testo:
-	./papka2/test
-
 .PHONY: clean
 clean:
-	rm -f -r  papka1/ papka2/
+	rm -r  papka1/ papka2/

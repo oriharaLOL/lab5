@@ -1,9 +1,9 @@
 #include<stdio.h>
 #include<math.h>
 
-void dis(float a,float b,float c)
+void dis(int a,int b,int c)
 {
-float x1,x2,D;
+int x1,x2,D;
     D = (b*b)-(4*a*c);
     if(D<0)
 	{printf("no roots");}
@@ -12,5 +12,5 @@ float x1,x2,D;
 	x1 = (-b + sqrt(D))/(2*a);
 	x2 = (-b - sqrt(D))/(2*a);
     }
-printf("x1 = %f, x2 = %f",x1,x2);
+printf("x1 = %d, x2 = %d",x1,x2);
 }

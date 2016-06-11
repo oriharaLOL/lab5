@@ -1,6 +1,6 @@
 #ifndef DIS_H
 #define DIS_H
 
-void dis(float a,float b,float c);
+void dis(int a,int b,int c);
 
 #endif
