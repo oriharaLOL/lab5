@@ -1,5 +1,5 @@
 #include <ctest.h>
-#include <diskr.h>
+#include <dis.h>
 
 CTEST(equation_suite, two_roots_test)
 {

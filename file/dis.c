@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<math.h>
-#include"diskr.h"
+#include"dis.h"
 
 void dis(int a,int b,int c)
 {

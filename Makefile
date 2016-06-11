@@ -1,7 +1,7 @@
-INCLUDES = -I ./file -I thirdparty/
+INCLUDES = -I ./file -I ./thirdparty
 
-./papka1/diskr: ./papka2/main.o ./papka2/dis.o ./papka2/test.o ./papka1 ./papka2
-	gcc -o ./papka1/diskr -lm ./papka2/main.o ./papka2/dis.o -Wall
+./papka1/dis: ./papka2/main.o ./papka2/dis.o ./papka2/test.o ./papka1 ./papka2
+	gcc -o ./papka1/dis -lm ./papka2/main.o ./papka2/dis.o -Wall
 
 ./papka1/test: ./papka2/maintest.o ./papka2/dis.o ./papka2/test.o ./papka1 ./papka2
 	gcc -o ./papka1/test -lm ./papka2/test.o ./papka2/maintest.o ./papka2/dis.o -Wall
