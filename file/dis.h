@@ -1,6 +1,6 @@
 #ifndef DIS_H
 #define DIS_H
 
-void dis(int a,int b,int c);
+int dis(int a,int b,int c,int x1,int x2);
 
 #endif

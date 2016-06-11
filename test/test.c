@@ -9,7 +9,7 @@ CTEST(equation_suite, two_roots_test)
 
     double x1;
     double x2;
-    dis(a, b, c);
+    dis(a, b, c,x1, x2);
 
      const double expected_x1 = -1;
      const double expected_x2 = -3;
@@ -25,7 +25,7 @@ CTEST(equation_suite, one_root_test)
 
     double x1;
     double x2;
-    dis(a, b, c);
+    dis(a, b, c, x1, x2);
 
     const double expected_x1 = 1;
     const double expected_x2 = 1;
@@ -42,7 +42,7 @@ CTEST(equation_suite, zero_a_test)
 
     double x1;
     double x2;
-    dis(a, b, c);
+    dis(a, b, c, x1, x2);
 
     const double expected_x1 = 0;
     const double expected_x2 = 0;
